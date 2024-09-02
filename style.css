@@ -1,0 +1,247 @@
+/* -------------------- UNIVERSAL STYLES -------------------- */
+
+body{
+    margin: 0; 
+    /*Some browers add a margin around the borders of your page, so we use margin and padding of 0*/
+    padding: 0;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #363636;
+}
+
+p{
+    line-height: 190%; 
+    /*Spaces between lines in a paragraph*/
+}
+
+a{
+    text-decoration: none;
+    color: teal;
+}
+
+/* -------------------- MENU -------------------- */
+
+#menu{
+    background-color: #16a085;
+    height: 100px;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+    /*Removes listed dots*/
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#menu a{
+    letter-spacing: 1px; 
+    /*Spacing between letters*/
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100px;
+    color: white;
+    
+    padding: 0 40px; 
+    /*First number is top and bottom, second number is left and right*/
+    border: none;
+    display: block;
+}
+
+#menu a:hover{
+    background-color: #1abc9c;
+}
+
+/* -------------------- HEADER -------------------- */
+
+#header{
+    padding: 60px 0 40px 0; 
+    /*Clockwise direction: top right bottom and then left*/
+    background-color: #333333;
+    text-align: center;
+}
+
+#header h1{
+    letter-spacing: 0.1em; 
+    /*Different type of measurement used instylesheet, eg px*/
+    font-size: 44px;
+    color: white;
+}
+
+#header p{
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+/* -------------------- BANNER -------------------- */
+
+#banner{
+    height: 300px;
+}
+
+#banner img{
+    width: 100%;
+    height: 300px;
+}
+
+/* -------------------- PAGE -------------------- */
+
+#page{
+    min-height: 400px; 
+    /*Lowest height it can be*/
+    padding: 20px;
+}
+
+#page h2{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: #16a085;
+}
+
+/* ---------- CONTENT ---------- */
+
+#content{
+    float: left; 
+    /*Stick to left side of the screen*/
+    width: 70%;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+#sidebar{
+    float: right;
+    width: 25%; 
+    /*70% from content and 25% from sidebar make a total of 95% of the screen, leaving 5% for extra styling or margins etc*/
+}
+
+/* ---------- LISTS ---------- */
+
+ul.styled{ 
+    /*Targetting <ul class="styled"> in index.html*/
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+    /*Removes styling aka dots from the list*/
+}
+
+ul.styled li{ 
+    /*Styling specifically the li from this ul class*/
+    border-top: solid 1px #e5e5e5;
+    padding: 14px 0; 
+    /*Top then bottom*/
+}
+
+/* -------------------- FOOTER -------------------- */
+
+#footer{
+    width: 100%;
+    height: 340px;
+    background-color: #1e1b1a;
+    padding-top: 25px;
+    padding-left: 22px;
+    clear: both; /*Keeps left and right floats on content/sidebar and keeps footer to the bottom of the floats*/
+}
+
+#footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+#footer p{
+    color: #
+}
+
+#footer a{
+    color: #adadad;
+}
+
+/* ---------- COLUMNS/BOXES ---------- */
+
+#column1{
+    float: left;
+    width: 30%;
+    padding-right: 30px;
+    /*To leave space between the columns*/
+}
+
+#column2{
+    float: left;
+    width: 30%;
+    padding-right: 30px;
+}
+
+#column3{
+    float: right;
+    width: 30%;
+    padding-left: 30px;
+}
+
+/* -------------------- COPYRIGHT -------------------- */
+
+#copyright{
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: #16a085;
+    padding-top: 55px;
+    clear: both; 
+    /*Clear both will come below any floats left and right*/
+}
+
+#copyright p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* -------------------- GALLERY -------------------- */
+
+#gallery img{
+    width: 120px;
+    margin: 12px;
+    /*So there is space between the images*/
+    -moz-transition: -moz-transform 0.5s ease-in;
+    /*Transition is going to apply. It is going to ease in for half a second*/
+	-webkit-transition: -webkit-transform 0.5s ease-in;
+	-o-transition: -o-transform 0.5s ease-in;
+}
+
+#gallery img:hover{
+    -moz-transform: scale(3);
+    /*Image will be scaled x3 displayed of what it is currently*/
+	-webkit-transform: scale(3);
+	-o-transform: scale(3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
